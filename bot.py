@@ -23,7 +23,7 @@ async def on_message(message):
     for keyword in keywords:
         if keyword in message_content or any(
                 fuzz.partial_ratio(keyword, message_content) > 80 for keyword in variations):
-            scolding_message = f"Hey {message.author.mention}, STOP CALLING KIRAT BE INDEPEDENT!"
+            scolding_message = f"Hey {message.author.mention}, Stop calling Harkirat bhaiya or sir just Harkirat is fine!"
             await message.author.send(scolding_message)
             break
 
